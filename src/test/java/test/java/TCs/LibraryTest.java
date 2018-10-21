@@ -49,6 +49,7 @@ public class LibraryTest {
 	public void user_is_on_Home_page() throws Throwable {
 
 		System.setProperty("webdriver.chrome.driver", "chromedriver_win32/chromedriver.exe");
+		System.setProperty("webdriver.chrome.verboseLogging", "true");
 
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.setBinary("chromedriver_linux64/chromedriver");
