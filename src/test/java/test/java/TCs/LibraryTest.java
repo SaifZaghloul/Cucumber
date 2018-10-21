@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import Pages.Helpers.ElementFinder;
@@ -49,14 +48,15 @@ public class LibraryTest {
 	@Given("^user is on Home page$")
 	public void user_is_on_Home_page() throws Throwable {
 
-		System.setProperty("webdriver.chrome.driver", "chromedriver_win32/chromedriver.exe");
+		// System.setProperty("webdriver.chrome.driver",
+		// "chromedriver_win32/chromedriver.exe");
 
 		WebDriverManager.chromedriver().setup();
 
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("headless");
+		// ChromeOptions options = new ChromeOptions();
+		// options.addArguments("headless");
 
-		driver = new ChromeDriver(options);
+		driver = new ChromeDriver();
 
 		driver.get("https://stage2user:Wdin4twf@dev-1.con.bmw/modelrangeselection.html?country=at&language=de");
 
