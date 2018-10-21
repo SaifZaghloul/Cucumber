@@ -52,8 +52,8 @@ public class LibraryTest {
 		System.setProperty("webdriver.chrome.verboseLogging", "true");
 
 		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.setBinary("chromedriver_win32/chromedriver.exe");
-		chromeOptions.addArguments("--no-sandbox");
+		chromeOptions.setBinary("/chromedriver_win32/chromedriver.exe");
+		// chromeOptions.addArguments("--no-sandbox");
 
 		// WebDriverManager.chromedriver().setup();
 
