@@ -48,8 +48,9 @@ public class LibraryTest {
 	@Given("^user is on Home page$")
 	public void user_is_on_Home_page() throws Throwable {
 
-		System.setProperty("webdriver.chrome.driver", "chromedriver_win32/chromedriver.exe");
-		System.setProperty("webdriver.chrome.verboseLogging", "true");
+		// System.setProperty("webdriver.chrome.driver",
+		// "chromedriver_win32/chromedriver.exe");
+		// System.setProperty("webdriver.chrome.verboseLogging", "true");
 
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.setBinary("chromedriver_win32/chromedriver.exe");
