@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import Pages.Helpers.ElementFinder;
@@ -51,7 +52,10 @@ public class LibraryTest {
 
 		// WebDriverManager.chromedriver().setup();
 
-		driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("headless");
+
+		driver = new ChromeDriver(options);
 
 		driver.get("https://stage2user:Wdin4twf@dev-1.con.bmw/modelrangeselection.html?country=at&language=de");
 
