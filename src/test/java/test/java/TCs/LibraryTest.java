@@ -21,7 +21,6 @@ import Sections.Summary;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import io.github.bonigarcia.wdm.ChromeDriverManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class LibraryTest {
@@ -49,10 +48,9 @@ public class LibraryTest {
 	@Given("^user is on Home page$")
 	public void user_is_on_Home_page() throws Throwable {
 
-		// System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
+		System.setProperty("webdriver.chrome.driver", "chromedriver_win32/chromedriver.exe");
 
 		// WebDriverManager.chromedriver().setup();
-		ChromeDriverManager.chromedriver().setup();
 
 		// ChromeOptions options = new ChromeOptions();
 		// options.addArguments("headless");
