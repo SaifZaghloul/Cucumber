@@ -53,8 +53,9 @@ public class LibraryTest {
 
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.setBinary("chromedriver_win32/chromedriver.exe");
-		chromeOptions.addArguments("no-sandbox");
-		chromeOptions.addArguments("disable-gpu");
+		chromeOptions.addArguments("--no-sandbox");
+		chromeOptions.addArguments("--disable-gpu");
+		chromeOptions.addArguments("--headless");
 
 		// WebDriverManager.chromedriver().setup();
 
