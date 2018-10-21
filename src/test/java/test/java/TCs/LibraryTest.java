@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import Pages.Helpers.ElementFinder;
@@ -21,7 +22,6 @@ import Sections.Summary;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class LibraryTest {
 
@@ -50,12 +50,15 @@ public class LibraryTest {
 
 		System.setProperty("webdriver.chrome.driver", "chromedriver_win32/chromedriver.exe");
 
+		ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.setBinary("chromedriver_win32/chromedriver.exe");
+
 		// WebDriverManager.chromedriver().setup();
 
 		// ChromeOptions options = new ChromeOptions();
 		// options.addArguments("headless");
 
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(chromeOptions);
 
 		driver.get("https://stage2user:Wdin4twf@dev-1.con.bmw/modelrangeselection.html?country=at&language=de");
 
