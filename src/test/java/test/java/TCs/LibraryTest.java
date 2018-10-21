@@ -21,7 +21,6 @@ import Sections.Summary;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class LibraryTest {
 
@@ -50,7 +49,7 @@ public class LibraryTest {
 
 		System.setProperty("webdriver.chrome.driver", "chromedriver_win32/chromedriver.exe");
 
-		WebDriverManager.chromedriver().setup();
+		// WebDriverManager.chromedriver().setup();
 
 		driver = new ChromeDriver();
 
