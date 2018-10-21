@@ -51,7 +51,7 @@ public class LibraryTest {
 		System.setProperty("webdriver.chrome.driver", "chromedriver_win32/chromedriver.exe");
 
 		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.setBinary("chromedriver_win32/chromedriver.exe");
+		chromeOptions.setBinary("chromedriver_linux64/chromedriver");
 
 		// WebDriverManager.chromedriver().setup();
 
