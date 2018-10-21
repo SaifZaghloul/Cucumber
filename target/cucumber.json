@@ -1,0 +1,69 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Successfully choosing a car",
+        "description": "",
+        "id": "choosecar;successfully-choosing-a-car",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 202928861426,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on Home page",
+            "match": {
+              "location": "LibraryTest.user_is_on_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29479726522,
+              "error_message": "java.lang.NullPointerException\r\n\tat Sections.General.ChooseCar(General.java:31)\r\n\tat test.java.TCs.LibraryTest.user_click_on_a_car(LibraryTest.java:69)\r\n\tat ✽.When user click on a car(CONBMW.feature:5)\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user click on a car",
+            "match": {
+              "location": "LibraryTest.user_click_on_a_car()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "he will be navigated to the car details page",
+            "match": {
+              "location": "LibraryTest.he_will_be_navigated_to_the_car_details_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "car details will be displayed",
+            "match": {
+              "location": "LibraryTest.car_details_will_be_displayed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "ChooseCar",
+    "description": "",
+    "id": "choosecar",
+    "keyword": "Feature",
+    "uri": "CONBMW.feature"
+  }
+]

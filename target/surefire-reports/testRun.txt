@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: testRun
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 2, Skipped: 1, Time elapsed: 28.105 s <<< FAILURE! - in testRun
+Then he will be navigated to the car details page(Scenario: Successfully choosing a car)  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+
+Scenario: Successfully choosing a car  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+
