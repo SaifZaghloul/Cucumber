@@ -53,6 +53,9 @@ public class LibraryTest {
 		// "chromedriver_win32/chromedriver.exe");
 		// System.setProperty("webdriver.chrome.verboseLogging", "true");
 
+		System.setProperty("webdriver.chrome.logfile", "C:\\Users\\SaifZaghloul\\Desktop\\chromedriver.log");
+		System.setProperty("webdriver.chrome.verboseLogging", "true");
+
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.setBinary("chromedriver_win32/chromedriver.exe");
 		chromeOptions.addArguments("no-sandbox");
